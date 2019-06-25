@@ -4,12 +4,12 @@ startNumber = int(input("Current number? "))
 start = time.perf_counter()
 myNumber = int(input ("your number? "))
 nextNumber = 1
-currentNumber = startNumber + 1
+currentNumber = startNumber
 while nextNumber != "0":
     nextNumber = input ("press enter when the next queue number is called; 0 to exit ")
+    currentNumber = currentNumber + 1
     end = time.perf_counter()
     timeLeft = ((end - start) / (currentNumber - startNumber)) * (myNumber - currentNumber)
-    currentNumber = currentNumber + 1
     print("current number:", currentNumber)
     if timeLeft < 60 :
         print("your turn is in %d seconds" % timeLeft)

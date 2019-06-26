@@ -19,4 +19,7 @@ while nextNumber != "0":
             secondsLeft = int(timeLeft - (minutesLeft * 60))
             timeLeftString = "{} minutes, {} seconds."
             print("your turn is in " + timeLeftString.format(minutesLeft, secondsLeft))
-    print ("waiting for ", int(end - start), "seconds so far") 
+        print ("waiting for", int(end - start), "seconds so far") 
+    else:
+        print("Your turn has arrived")
+        quit()

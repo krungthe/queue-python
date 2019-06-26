@@ -11,11 +11,12 @@ while nextNumber != "0":
     end = time.perf_counter()
     timeLeft = ((end - start) / (currentNumber - startNumber)) * (myNumber - currentNumber)
     print("current number:", currentNumber)
-    if timeLeft < 60 :
-        print("your turn is in %d seconds" % timeLeft)
-    else :
-        minutesLeft = int(timeLeft / 60)
-        secondsLeft = int(timeLeft - (minutesLeft * 60))
-        timeLeftString = "{} minutes, {} seconds."
-        print("your turn is in " + timeLeftString.format(minutesLeft, secondsLeft))
+    if currentNumber < myNumber :
+        if timeLeft < 60 :
+            print("your turn is in %d seconds" % timeLeft)
+        else :
+            minutesLeft = int(timeLeft / 60)
+            secondsLeft = int(timeLeft - (minutesLeft * 60))
+            timeLeftString = "{} minutes, {} seconds."
+            print("your turn is in " + timeLeftString.format(minutesLeft, secondsLeft))
     print ("waiting for ", int(end - start), "seconds so far") 

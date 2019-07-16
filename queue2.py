@@ -35,5 +35,5 @@ while nextNumber != "0":
         print("ETA: " + string )
         print ("wait: " + string2)
     else:
-        print("Your turn! total wait:", int(end -start),"s")
+        print("Your turn! total wait:", str(timeFormat((int(end - start)))))
         quit()

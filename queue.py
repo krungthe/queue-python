@@ -17,8 +17,8 @@ while nextNumber != "0":
         else :
             minutesLeft = int(timeLeft / 60)
             secondsLeft = int(timeLeft - (minutesLeft * 60))
-            print(f"ETA: {minutesLeft}m {secondsLeft}s");
-        print (f"wait: {int(end - start)}s\n");
+            print(f"ETA: {minutesLeft}m {secondsLeft}s")
+        print (f"wait: {int(end - start)}s\n")
     else:
-        print("Your turn! total wait:", int(end -start),"s");
+        print("Your turn! total wait:", int(end -start),"s")
         quit()

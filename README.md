@@ -4,4 +4,4 @@ Python3 script to guess calculate the time remaining before our queue number is 
 
 To run, execute:
 
-$$ python queue.py
+$ python queue.py
